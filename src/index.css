@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'DM Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1E1B18;
+    background-color: #F5F0E8;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom styles for luxury restaurant aesthetic */
+.font-display {
+  font-family: var(--font-serif);
+}
+
+.text-gold {
+  color: #B08D57;
+}
+
+.bg-gold {
+  background-color: #B08D57;
+}
+
+.border-gold {
+  border-color: #B08D57;
+}
+
+.bg-charcoal {
+  background-color: #1E1B18;
+}
+
+.bg-charcoal-dark {
+  background-color: #151311;
+}
+
+.bg-cream {
+  background-color: #F5F0E8;
+}
+
+.bg-cayenne {
+  background-color: #B52A2A;
+}
+
+.text-cayenne {
+  color: #B52A2A;
+}
+
+/* Subtle ember glow effect */
+@keyframes emberGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(-8px) scale(1.05);
+  }
+}
+
+.animate-ember {
+  animation: emberGlow 4s ease-in-out infinite;
+}
+
+/* Hide scrollbar for category tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

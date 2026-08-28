@@ -1,0 +1,6 @@
+{
+  "name": "Asador La Cayena",
+  "description": "Authentic Andalusian charcoal grill, Mediterranean dining, online ordering and table reservation web application in La Zubia, Granada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
